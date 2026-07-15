@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sooo Delicious | Chicken & Waffles, Burgers & Fries in Penn Hills, PA</title>
+<meta name="description" content="Waffle burgers pressed golden to order, chicken & waffle combos, Mac Cracken bowls, and soul-food sides in Penn Hills, Pittsburgh. Call (412) 701-9191 for pickup or order online.">
+<link rel="canonical" href="https://sooodeliciouskitchen.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sooo Delicious — Chicken & Waffles, Burgers & Fries | Penn Hills, PA">
+<meta property="og:description" content="Waffle burgers pressed golden to order, chicken & waffle combos, and soul-food sides. Call (412) 701-9191 — 2796 Robinson Blvd, Penn Hills.">
+<meta property="og:image" content="og.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Sooo Delicious Chicken & Waffles, Burgers & Fries",
+  "url": "https://sooodeliciouskitchen.com/",
+  "telephone": "+1-412-701-9191",
+  "priceRange": "$$",
+  "servesCuisine": ["Chicken and Waffles", "Soul Food", "Burgers", "American"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2796 Robinson Blvd",
+    "addressLocality": "Penn Hills",
+    "addressRegion": "PA",
+    "postalCode": "15235",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "11:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday", "opens": "11:30", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday", "opens": "12:00", "closes": "20:00" }
+  ],
+  "menu": "https://sooodeliciouskitchen.com/#menu",
+  "sameAs": [
+    "https://www.instagram.com/sooodeliciouskitchen/",
+    "https://www.facebook.com/Sooodeliciouskitchen/"
+  ]
+}
+</script>
+<style>
+  :root{
+    --blue:#1d3f8f;        /* sign blue */
+    --blue-deep:#152d68;
+    --red:#ce2a2a;         /* checker + CTA red */
+    --red-dark:#a31f1f;
+    --gold:#ffb520;        /* syrup gold */
+    --gold-soft:#ffd97a;
+    --brown:#4a2b12;       /* waffle brown */
+    --cream:#fff7ea;
+    --ink:#241505;
+    --display:'Arial Black', 'Archivo Black', system-ui, sans-serif;
+    --body: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--body);
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.55;
+    padding-bottom:76px; /* room for sticky bar */
+  }
+  img,svg{max-width:100%}
+  a{color:var(--red)}
+
+  /* ---------- checker + drip decorations ---------- */
+  .checker{
+    height:14px;
+    background:repeating-conic-gradient(var(--red) 0% 25%, #fff 0% 50%);
+    background-size:28px 28px;
+  }
+  .drip{display:block;width:100%;height:34px}
+
+  /* ---------- header ---------- */
+  header{
+    background:var(--blue);
+    color:#fff;
+    position:sticky;top:0;z-index:50;
+    box-shadow:0 2px 10px rgba(0,0,0,.25);
+  }
+  .nav{
+    max-width:1060px;margin:0 auto;
+    display:flex;align-items:center;gap:16px;
+    padding:10px 16px;
+  }
+  .nav .brand{
+    font-family:var(--display);font-weight:900;
+    font-size:1.05rem;letter-spacing:.5px;color:var(--gold);
+    text-transform:uppercase;text-decoration:none;white-space:nowrap;
+  }
+  .nav .brand span{color:#fff}
+  .nav ul{display:flex;gap:18px;list-style:none;margin-left:auto}
+  .nav ul a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav ul a:hover{color:var(--gold)}
+  .nav .call{
+    margin-left:12px;background:var(--red);color:#fff;
+    padding:9px 16px;border-radius:999px;font-weight:800;
+    text-decoration:none;white-space:nowrap;font-size:.95rem;
+    border:2px solid #fff;
+  }
+  .nav .call:hover{background:var(--red-dark);color:#fff}
+  @media(max-width:760px){ .nav ul{display:none} .nav .call{margin-left:auto} }
+  @media(max-width:480px){
+    .nav{gap:8px;padding:10px 12px}
+    .nav .brand{font-size:.88rem}
+    .nav .call{font-size:.82rem;padding:8px 12px}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:
+      radial-gradient(1200px 500px at 50% -100px, #2a55b5 0%, var(--blue) 55%, var(--blue-deep) 100%);
+    color:#fff;text-align:center;
+    padding:52px 20px 0;
+    overflow:hidden;
+  }
+  .hero .locale{
+    display:inline-block;font-weight:700;font-size:.85rem;letter-spacing:2px;
+    text-transform:uppercase;color:var(--gold-soft);
+    border:1px solid rgba(255,217,122,.5);border-radius:999px;
+    padding:5px 14px;margin-bottom:22px;
+  }
+  .wordmark{font-family:var(--display);text-transform:uppercase;line-height:.92}
+  .wordmark .sooo{
+    display:block;font-size:clamp(3rem, 11vw, 6.5rem);
+    color:var(--gold);
+    text-shadow:3px 3px 0 var(--red), 6px 6px 0 rgba(0,0,0,.35);
+    letter-spacing:2px;
+  }
+  .wordmark .delicious{
+    display:block;font-size:clamp(2.2rem, 8.5vw, 5rem);
+    color:#fff;
+    text-shadow:3px 3px 0 var(--red-dark), 6px 6px 0 rgba(0,0,0,.35);
+    letter-spacing:1px;margin-top:4px;
+  }
+  .hero .tag{
+    font-family:var(--display);font-weight:900;text-transform:uppercase;
+    color:var(--gold-soft);font-size:clamp(1rem, 3.4vw, 1.5rem);
+    letter-spacing:1px;margin-top:18px;
+  }
+  .hero .pitch{
+    max-width:560px;margin:14px auto 0;font-size:1.06rem;color:#e9eeff;
+  }
+  .hero .status{
+    margin-top:16px;font-weight:700;font-size:1rem;color:#fff;
+  }
+  .hero .status .dot{color:#5ee87d}
+  .hero .status .dot.closed{color:#ffb3b3}
+  .hero .ctas{
+    display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+    margin:22px auto 0;
+  }
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:800;
+    border-radius:14px;padding:16px 26px;font-size:1.1rem;
+  }
+  .btn-primary{
+    background:var(--red);color:#fff;
+    box-shadow:0 5px 0 var(--red-dark);
+    border:3px solid #fff;
+  }
+  .btn-primary:hover{transform:translateY(2px);box-shadow:0 3px 0 var(--red-dark)}
+  .btn-secondary{
+    background:var(--gold);color:var(--brown);
+    box-shadow:0 5px 0 #b97e0a;border:3px solid #fff;
+  }
+  .btn-secondary:hover{transform:translateY(2px);box-shadow:0 3px 0 #b97e0a}
+  .hero .addr{margin:20px 0 0;font-size:.95rem;color:#c8d4f5;padding-bottom:40px}
+  .hero .addr a{color:var(--gold-soft)}
+
+  /* ---------- waffle burger callout ---------- */
+  .callout{
+    max-width:900px;margin:44px auto;padding:0 20px;
+  }
+  .callout .card{
+    background:#fff;border:3px solid var(--brown);border-radius:20px;
+    box-shadow:8px 8px 0 var(--gold);
+    padding:30px 28px;display:flex;gap:26px;align-items:center;flex-wrap:wrap;
+  }
+  .callout h2{
+    font-family:var(--display);text-transform:uppercase;color:var(--red);
+    font-size:clamp(1.4rem,4.5vw,2rem);line-height:1.1;margin-bottom:10px;
+  }
+  .callout p{font-size:1.05rem}
+  .callout .art{flex:0 0 130px;margin:0 auto}
+
+  /* ---------- sections ---------- */
+  section{scroll-margin-top:70px}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+  .sec-head{
+    text-align:center;margin:54px 0 8px;
+  }
+  .sec-head h2{
+    font-family:var(--display);text-transform:uppercase;
+    font-size:clamp(1.8rem,6vw,2.7rem);color:var(--brown);
+    text-shadow:2px 2px 0 var(--gold-soft);
+    letter-spacing:1px;
+  }
+  .sec-head p{color:#6b4a26;font-weight:600;margin-top:6px}
+
+  /* ---------- menu ---------- */
+  .menu-grid{
+    display:grid;gap:22px;margin:30px 0 10px;
+    grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  }
+  .dish{
+    background:#fff;border-radius:16px;overflow:hidden;
+    border:2px solid #ead9bd;
+    box-shadow:0 4px 14px rgba(74,43,18,.08);
+    display:flex;flex-direction:column;
+  }
+  .dish .top{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 18px;
+    background:repeating-conic-gradient(#f8e3e3 0% 25%, #fff 0% 50%);
+    background-size:22px 22px;
+    border-bottom:2px solid #ead9bd;
+  }
+  .dish .num{
+    font-family:var(--display);font-size:1.5rem;color:#fff;
+    background:var(--red);border-radius:50%;
+    width:44px;height:44px;flex:0 0 44px;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:2px 2px 0 var(--brown);
+  }
+  .dish h3{
+    font-family:var(--display);text-transform:uppercase;
+    font-size:1.12rem;color:var(--brown);line-height:1.15;
+  }
+  .dish .body{padding:16px 18px 20px;display:flex;gap:14px}
+  .dish .body p{font-size:.98rem}
+  .dish .picks{margin-top:10px;font-size:.9rem;color:#6b4a26}
+  .dish .picks strong{color:var(--red)}
+  .dish .icon{flex:0 0 56px;margin-top:2px}
+
+  .strip{
+    margin:34px 0;
+    background:var(--gold);
+    border-radius:16px;border:3px solid var(--brown);
+    padding:22px 24px;
+    display:flex;flex-wrap:wrap;gap:10px 26px;align-items:center;justify-content:center;
+  }
+  .strip h3{
+    font-family:var(--display);text-transform:uppercase;color:var(--brown);
+    width:100%;text-align:center;font-size:1.15rem;margin-bottom:4px;
+  }
+  .strip span{
+    background:#fff;border-radius:999px;padding:7px 16px;
+    font-weight:700;color:var(--brown);font-size:.95rem;
+    border:2px solid var(--brown);
+  }
+  .menu-note{text-align:center;color:#6b4a26;font-size:.95rem;margin:6px 0 40px}
+  .menu-note a{font-weight:700}
+
+  /* ---------- find us ---------- */
+  .findus{
+    background:var(--blue);color:#fff;padding:46px 20px 54px;text-align:center;
+  }
+  .findus h2{
+    font-family:var(--display);text-transform:uppercase;color:var(--gold);
+    font-size:clamp(1.6rem,5vw,2.3rem);text-shadow:2px 2px 0 var(--red-dark);
+  }
+  .findus p{max-width:520px;margin:12px auto 22px;color:#dfe7ff}
+  .badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .badges a{
+    background:#fff;color:var(--blue);text-decoration:none;font-weight:800;
+    border-radius:999px;padding:11px 20px;font-size:.95rem;
+    border:3px solid var(--gold);
+  }
+  .badges a:hover{background:var(--gold-soft)}
+
+  /* ---------- visit ---------- */
+  .visit{display:grid;gap:26px;grid-template-columns:1fr 1fr;margin:34px 0 60px}
+  @media(max-width:760px){.visit{grid-template-columns:1fr}}
+  .visit .panel{
+    background:#fff;border:2px solid #ead9bd;border-radius:16px;padding:26px;
+    box-shadow:0 4px 14px rgba(74,43,18,.08);
+  }
+  .visit h3{
+    font-family:var(--display);text-transform:uppercase;color:var(--brown);
+    font-size:1.2rem;margin-bottom:14px;
+  }
+  .visit address{font-style:normal;font-size:1.05rem}
+  .visit .panel .btn{margin-top:18px;font-size:1rem;padding:13px 22px}
+  .hours{width:100%;border-collapse:collapse;font-size:1rem}
+  .hours td{padding:7px 4px;border-bottom:1px dashed #ead9bd}
+  .hours tr:last-child td{border-bottom:none}
+  .hours td:last-child{text-align:right;font-weight:600}
+  .hours tr.today td{color:var(--red);font-weight:800}
+  .visit .phone{font-size:1.25rem;font-weight:800;margin-top:10px;display:inline-block}
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--brown);color:#f4e6d2;text-align:center;
+    padding:30px 20px 38px;font-size:.92rem;
+  }
+  footer a{color:var(--gold-soft)}
+  footer .fbrand{
+    font-family:var(--display);text-transform:uppercase;color:var(--gold);
+    font-size:1.05rem;margin-bottom:8px;
+  }
+
+  /* ---------- sticky mobile bar ---------- */
+  .sticky-bar{
+    position:fixed;bottom:0;left:0;right:0;z-index:60;
+    display:flex;
+    background:#fff;border-top:3px solid var(--red);
+    padding:8px 10px calc(8px + env(safe-area-inset-bottom));
+    gap:8px;
+  }
+  .sticky-bar a{
+    flex:1;text-align:center;text-decoration:none;font-weight:800;
+    border-radius:12px;padding:12px 4px;font-size:.95rem;
+    min-height:44px;display:flex;align-items:center;justify-content:center;gap:6px;
+  }
+  .sticky-bar .s-call{background:var(--red);color:#fff}
+  .sticky-bar .s-order{background:var(--gold);color:var(--brown)}
+  .sticky-bar .s-dir{background:var(--blue);color:#fff}
+  @media(min-width:900px){ .sticky-bar{display:none} body{padding-bottom:0} }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">Sooo… <span>Delicious</span></a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#waffleburger">Waffle Burger</a></li>
+      <li><a href="#visit">Hours &amp; Directions</a></li>
+    </ul>
+    <a class="call" href="tel:+14127019191">📞 (412) 701-9191</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" aria-label="Welcome">
+    <p class="locale">Penn Hills · Pittsburgh, PA</p>
+    <h1 class="wordmark">
+      <span class="sooo">Sooo…</span>
+      <span class="delicious">Delicious</span>
+    </h1>
+    <p class="tag">Chicken &amp; Waffles · Burgers &amp; Fries</p>
+    <p class="pitch">Golden-pressed waffle burgers, crispy chicken over Belgian cornbread
+      waffles, and soul-food sides — hot off the iron on Robinson Blvd.</p>
+    <p class="status" id="open-status"><span class="dot">●</span> Open daily — see hours below</p>
+    <div class="ctas">
+      <a class="btn btn-primary" href="tel:+14127019191">📞 Call in your order</a>
+      <a class="btn btn-secondary" href="https://ordersdpittsburghonline.com/" rel="noopener">Order online</a>
+    </div>
+    <p class="addr">2796 Robinson Blvd, Penn Hills, PA 15235 ·
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">Get directions</a>
+    </p>
+  </section>
+  <div class="checker" role="presentation"></div>
+
+  <!-- ========== WAFFLE BURGER CALLOUT ========== -->
+  <section class="callout" id="waffleburger" aria-label="What is a waffle burger">
+    <div class="card">
+      <div class="art">
+        <svg viewBox="0 0 120 120" width="130" height="130" role="img" aria-label="Illustration of a waffle burger: a burger pressed in a waffle pattern">
+          <circle cx="60" cy="60" r="56" fill="#ffd97a"/>
+          <rect x="18" y="38" width="84" height="16" rx="8" fill="#c98a3b"/>
+          <g stroke="#8a5a1e" stroke-width="3">
+            <line x1="30" y1="38" x2="30" y2="54"/><line x1="46" y1="38" x2="46" y2="54"/>
+            <line x1="62" y1="38" x2="62" y2="54"/><line x1="78" y1="38" x2="78" y2="54"/>
+            <line x1="94" y1="38" x2="94" y2="54"/>
+          </g>
+          <rect x="20" y="56" width="80" height="9" rx="4" fill="#ffb520"/>
+          <path d="M20 65 h80 l-7 8 h-66 z" fill="#5b9e34"/>
+          <rect x="16" y="74" width="88" height="13" rx="6" fill="#7a3f1d"/>
+          <rect x="18" y="88" width="84" height="14" rx="7" fill="#c98a3b"/>
+          <g stroke="#8a5a1e" stroke-width="3">
+            <line x1="32" y1="88" x2="32" y2="102"/><line x1="50" y1="88" x2="50" y2="102"/>
+            <line x1="68" y1="88" x2="68" y2="102"/><line x1="86" y1="88" x2="86" y2="102"/>
+          </g>
+        </svg>
+      </div>
+      <div style="flex:1;min-width:230px">
+        <h2>Wait… what’s a Waffle Burger?</h2>
+        <p>A juicy seasoned burger — bun and all — pressed between <strong>two scorching-hot
+        waffle irons</strong>, so the whole thing cooks to a golden crisp and locks in the
+        melted cheese and toppings. You’ve had burgers. You haven’t had this.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section id="menu" aria-label="Menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The Big Five</h2>
+        <p>Every meal comes with our signature sides energy. Pick your number, call it in.</p>
+      </div>
+
+      <div class="menu-grid">
+        <article class="dish">
+          <div class="top"><span class="num" aria-hidden="true">1</span><h3>Chicken &amp; Waffle Combo</h3></div>
+          <div class="body">
+            <div class="icon">
+              <svg viewBox="0 0 60 60" role="img" aria-label="Waffle icon"><circle cx="30" cy="30" r="27" fill="#ffb520"/><g stroke="#8a5a1e" stroke-width="3"><line x1="12" y1="21" x2="48" y2="21"/><line x1="12" y1="39" x2="48" y2="39"/><line x1="21" y1="12" x2="21" y2="48"/><line x1="39" y1="12" x2="39" y2="48"/></g></svg>
+            </div>
+            <div>
+              <p>Crispy fried chicken over our signature <strong>Belgian cornbread waffle</strong>.
+              Medium: one side + half waffle. Large: two sides + a whole waffle.</p>
+              <p class="picks"><strong>Waffle:</strong> Belgian Cornbread · Caramel Apple · Carnival Confetti · Lemoncello Cream<br>
+              <strong>Protein:</strong> wings · tenders · steak · fried cod</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish">
+          <div class="top"><span class="num" aria-hidden="true">2</span><h3>Mac Cracken Bowls</h3></div>
+          <div class="body">
+            <div class="icon">
+              <svg viewBox="0 0 60 60" role="img" aria-label="Mac and cheese bowl icon"><path d="M8 26 h44 l-6 22 a6 6 0 0 1-6 5 H20 a6 6 0 0 1-6-5 z" fill="#ce2a2a"/><ellipse cx="30" cy="26" rx="22" ry="7" fill="#ffb520"/><g fill="#ffd97a"><circle cx="20" cy="24" r="3"/><circle cx="31" cy="27" r="3"/><circle cx="41" cy="23" r="3"/></g></svg>
+            </div>
+            <div>
+              <p>A hearty bowl of <strong>creamy mac &amp; cheese</strong> loaded your way.</p>
+              <p class="picks"><strong>Buffalo Mac</strong> — crispy buffalo chicken, ranch drizzle<br>
+              <strong>Philly Cheesesteak Mac</strong> — tender steak, peppers, onions, melted cheese<br>
+              <strong>Fish &amp; Chips Mac</strong> — crispy fried fish &amp; golden chips</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish">
+          <div class="top"><span class="num" aria-hidden="true">3</span><h3>Build-Your-Own Waffle Burger</h3></div>
+          <div class="body">
+            <div class="icon">
+              <svg viewBox="0 0 60 60" role="img" aria-label="Burger icon"><rect x="8" y="14" width="44" height="10" rx="5" fill="#c98a3b"/><rect x="10" y="26" width="40" height="6" rx="3" fill="#ffb520"/><path d="M10 33 h40 l-4 5 h-32 z" fill="#5b9e34"/><rect x="8" y="39" width="44" height="8" rx="4" fill="#7a3f1d"/></svg>
+            </div>
+            <div>
+              <p>One patty or two, pressed golden on the waffle iron and stacked with cheese
+              and toppings.</p>
+              <p class="picks"><strong>Toppings:</strong> lettuce · pickles · onions · peppers · jalapeños · American cheese · bacon<br>
+              <strong>Sauces:</strong> ketchup · mayo · mustard · BBQ · gold · ranch &amp; more</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish">
+          <div class="top"><span class="num" aria-hidden="true">4</span><h3>Chicken Tuxedo</h3></div>
+          <div class="body">
+            <div class="icon">
+              <svg viewBox="0 0 60 60" role="img" aria-label="Fried chicken drumstick icon"><path d="M38 10 a14 14 0 1 1-14 22 l-6 7 a5 5 0 1 1-5-5 l7-6 a14 14 0 0 1 18-18z" fill="#c98a3b"/><circle cx="12" cy="49" r="4" fill="#fff"/><circle cx="17" cy="44" r="4" fill="#fff"/></svg>
+            </div>
+            <div>
+              <p>Fried chicken stacked in a bun and <strong>pressed to perfection on the waffle
+              iron</strong>, served with our signature sides. The dressed-up classic.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish">
+          <div class="top"><span class="num" aria-hidden="true">5</span><h3>Philly Cheesesteak</h3></div>
+          <div class="body">
+            <div class="icon">
+              <svg viewBox="0 0 60 60" role="img" aria-label="Cheesesteak sandwich icon"><path d="M6 34 q24 -18 48 0 l-4 10 q-20 -12 -40 0 z" fill="#c98a3b"/><path d="M12 36 q18 -10 36 0" stroke="#ffb520" stroke-width="5" fill="none"/></svg>
+            </div>
+            <div>
+              <p>Tender Philly-style steak with peppers, onions &amp; melted cheese on a fresh
+              roll, served with <strong>crispy seasoned fries</strong>.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="strip" role="list" aria-label="Signature sides">
+        <h3>Signature Sides</h3>
+        <span role="listitem">Hand-cut seasoned fries</span>
+        <span role="listitem">Famous mac &amp; cheese</span>
+        <span role="listitem">Smoked collard greens</span>
+        <span role="listitem">Candied yams</span>
+      </div>
+
+      <div class="strip" role="list" aria-label="Drinks">
+        <h3>Drinks</h3>
+        <span role="listitem">Soft drinks</span>
+        <span role="listitem">Red Bull</span>
+        <span role="listitem">20&nbsp;oz fruit drinks</span>
+        <span role="listitem">Water</span>
+      </div>
+
+      <p class="menu-note">Prices and today’s specials at the counter, by phone, or on the
+        <a href="https://ordersdpittsburghonline.com/" rel="noopener">online ordering menu</a>.
+        Waffle flavors rotate — ask what’s on the iron.</p>
+    </div>
+  </section>
+
+  <!-- ========== FIND US / PROOF ========== -->
+  <section class="findus" aria-label="Reviews and ordering platforms">
+    <h2>Don’t take our word for it</h2>
+    <p>See what Penn Hills is saying — then come taste why they keep coming back.</p>
+    <div class="badges">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">Google Reviews</a>
+      <a href="https://www.yelp.com/biz/sooo-delicious-penn-hills-township" rel="noopener">Yelp</a>
+      <a href="https://www.instagram.com/sooodeliciouskitchen/" rel="noopener">Instagram</a>
+      <a href="https://www.doordash.com/store/sooo-delicious-waffle-burger-frankstown-west-26002991/" rel="noopener">DoorDash</a>
+      <a href="https://www.grubhub.com/restaurant/sooo-delicious-2796-robinson-blvd-pittsburgh-pa-15235-pittsburgh/14353104" rel="noopener">Grubhub</a>
+    </div>
+  </section>
+
+  <!-- ========== VISIT ========== -->
+  <section id="visit" aria-label="Hours and directions">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Come &amp; Get It</h2>
+        <p>Takeout &amp; delivery · Robinson Blvd, right in Penn Hills</p>
+      </div>
+      <div class="visit">
+        <div class="panel">
+          <h3>Find us</h3>
+          <address>
+            Sooo Delicious Chicken &amp; Waffles, Burgers &amp; Fries<br>
+            2796 Robinson Blvd<br>
+            Penn Hills, PA 15235
+          </address>
+          <a class="phone" href="tel:+14127019191">(412) 701-9191</a><br>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">🧭 Get directions</a>
+        </div>
+        <div class="panel">
+          <h3>Hours</h3>
+          <table class="hours">
+            <tbody>
+              <tr data-day="1"><td>Monday</td><td>11:00 AM – 8:00 PM</td></tr>
+              <tr data-day="2"><td>Tuesday</td><td>11:00 AM – 8:00 PM</td></tr>
+              <tr data-day="3"><td>Wednesday</td><td>11:00 AM – 8:00 PM</td></tr>
+              <tr data-day="4"><td>Thursday</td><td>11:00 AM – 8:00 PM</td></tr>
+              <tr data-day="5"><td>Friday</td><td>11:00 AM – 8:00 PM</td></tr>
+              <tr data-day="6"><td>Saturday</td><td>11:30 AM – 8:00 PM</td></tr>
+              <tr data-day="0"><td>Sunday</td><td>12:00 PM – 8:00 PM</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="fbrand">Sooo… Delicious</p>
+  <p>2796 Robinson Blvd, Penn Hills, PA 15235 · <a href="tel:+14127019191">(412) 701-9191</a></p>
+  <p style="margin-top:8px">
+    <a href="https://www.instagram.com/sooodeliciouskitchen/" rel="noopener">Instagram</a> ·
+    <a href="https://www.facebook.com/Sooodeliciouskitchen/" rel="noopener">Facebook</a> ·
+    <a href="https://ordersdpittsburghonline.com/" rel="noopener">Order online</a>
+  </p>
+</footer>
+
+<nav class="sticky-bar" aria-label="Quick actions">
+  <a class="s-call" href="tel:+14127019191">📞 Call</a>
+  <a class="s-order" href="https://ordersdpittsburghonline.com/" rel="noopener">🧇 Order</a>
+  <a class="s-dir" href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">🧭 Directions</a>
+</nav>
+
+<script>
+  // Open-now indicator + highlight today's row. Hours mirror the schema above.
+  (function(){
+    var hours = {0:[12,20], 1:[11,20], 2:[11,20], 3:[11,20], 4:[11,20], 5:[11,20], 6:[11.5,20]};
+    var now = new Date(), day = now.getDay(), h = now.getHours() + now.getMinutes()/60;
+    var el = document.getElementById('open-status');
+    var row = document.querySelector('.hours tr[data-day="'+day+'"]');
+    if (row) row.classList.add('today');
+    var span = hours[day];
+    function fmt(t){var hh=Math.floor(t),mm=Math.round((t-hh)*60),ap=hh>=12?'PM':'AM';hh=((hh+11)%12)+1;return hh+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap;}
+    if (h >= span[0] && h < span[1]) {
+      el.innerHTML = '<span class="dot">●</span> Open now — closes ' + fmt(span[1]);
+    } else {
+      var next = h < span[0] ? span[0] : hours[(day+1)%7][0];
+      el.innerHTML = '<span class="dot closed">●</span> Closed — opens ' + (h < span[0] ? 'today ' : 'tomorrow ') + 'at ' + fmt(next);
+    }
+  })();
+</script>
+
+</body>
+</html>
