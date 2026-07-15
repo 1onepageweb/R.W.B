@@ -21,7 +21,8 @@ Before designing anything, establish (ask, or research the business if given a n
 - **The one primary conversion goal**: reservations, online orders, phone calls, or catering inquiries. Everything on the page ranks below this action.
 - Reservation/ordering platforms already in use (OpenTable, Resy, Toast, Square, DoorDash, phone-only) — the CTA must deep-link to the real system, never a dead button.
 - Hours, address(es), phone, and whether a Google Business Profile exists. The site must match it exactly (see NAP rules in `references/local-seo.md`).
-- Real assets available: food photography, logo, existing menu. Never fabricate photos of dishes; use tasteful non-photographic art direction (color, typography, illustration via `canvas-design`) when photos are missing.
+- **Asset intake is mandatory, not optional**: logo/mascot, food photography, and real reviews are the three things that make the site feel like *this* restaurant. Hunt for them before designing. Client-provided screenshots of their Google/Yelp gallery are a valid source — crop, straighten, and optimize the best tiles (trim any app UI from the edges). Never fabricate photos of dishes; only when nothing exists, use non-photographic art direction (color, typography, illustration via `canvas-design`) and flag a photo shoot as follow-up.
+- **Link verification is a hard gate.** Include an external link (ordering, delivery, reviews, socials) only after confirming it points to THIS business: the URL slug or the fetched page must match the business name AND address. A search-result title is not verification — similarly named restaurants are common in the same city. If a link cannot be verified, leave it out and list it as a question for the client; a dead button is bad, but a button that opens a competitor is fatal to trust.
 
 ## Phase 1 — Design direction (unique aesthetic)
 
@@ -38,7 +39,7 @@ skill for voice and headline craft. The skeleton that converts:
 - **Above the fold (mobile-first)**: restaurant name, one-line positioning, open-now status or hours, and the primary CTA. Address or neighborhood visible without scrolling.
 - **Menu is content, not a PDF.** Render the menu as HTML text (crawlable, accessible, translatable). A downloadable PDF may exist *in addition*, never instead.
 - Sticky mobile action bar: call, directions, reserve/order.
-- Social proof near the CTA, sourced from real reviews only — never invent quotes, ratings, or press mentions.
+- Social proof near the CTA, sourced from real reviews only — never invent quotes, ratings, or press mentions. Build the reviews module even with one verified quote: real quote(s) with platform attribution + live links to the business's Google/Yelp pages; more quotes get pulled with the owner at final. Match dish photos to menu items only when the dish is unambiguous — a mislabeled photo is as damaging as a wrong link.
 
 ## Phase 3 — Build
 

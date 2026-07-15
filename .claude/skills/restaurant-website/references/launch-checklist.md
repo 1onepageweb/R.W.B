@@ -10,6 +10,10 @@ Run top to bottom before calling a restaurant site done. Verify with `webapp-tes
 - [ ] Phone is a `tel:` link; address opens maps with correct pin.
 - [ ] Today's hours are correct and prominent; full weekly hours present.
 - [ ] Menu reachable in one tap from landing; renders as HTML text.
+- [ ] Every external link verified to resolve to THIS business (name + address match),
+      not a similarly named restaurant. Unverifiable links removed, not shipped.
+- [ ] Logo/mascot, real food photos, and at least one attributed real review present;
+      every dish photo matched to a menu item only when unambiguous.
 - [ ] All prices, dishes, and dietary marks confirmed against the client's real menu.
 - [ ] No fabricated reviews, ratings, awards, or photos anywhere.
 
