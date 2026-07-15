@@ -10,6 +10,12 @@ All skills were downloaded from Anthropic's public GitHub repositories:
 
 ## Installed skills
 
+### Restaurant niche (custom)
+
+| Skill | Purpose |
+|---|---|
+| `restaurant-website` | Custom end-to-end playbook for restaurant sites: five-phase workflow (brief → design → conversion copy → build → SEO → verify) with reference files for cuisine-driven design direction, conversion patterns (CTA hierarchy, menu presentation, sticky mobile bar), local SEO with ready-to-adapt Restaurant/Menu/FAQ JSON-LD, and a launch checklist. Orchestrates all the skills below. |
+
 ### Design & aesthetics
 
 | Skill | Purpose |
