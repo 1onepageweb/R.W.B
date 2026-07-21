@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Sooo Delicious | Chicken & Waffles, Burgers & Fries — Penn Hills, PA</title>
+<meta name="description" content="Waffle burgers pressed golden to order, crispy chicken over Belgian cornbread waffles, Mac Cracken bowls & soul-food sides in Penn Hills, Pittsburgh. Order by phone or text — pickup in ~15 min. (412) 701-9191.">
+<link rel="canonical" href="https://sdpittsburgh.com/">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Sooo Delicious — Chicken & Waffles, Burgers & Fries | Penn Hills, PA">
+<meta property="og:description" content="Golden-pressed waffle burgers, chicken & waffles, and soul-food sides. Order by phone or text — (412) 701-9191, 2796 Robinson Blvd, Penn Hills.">
+<meta property="og:image" content="https://sdpittsburgh.com/og.png">
+<meta property="og:url" content="https://sdpittsburgh.com/">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Sooo Delicious Chicken & Waffles, Burgers & Fries",
+  "url": "https://sdpittsburgh.com/",
+  "image": ["https://sdpittsburgh.com/assets/chicken-waffle-plate.jpg"],
+  "logo": "https://sdpittsburgh.com/assets/mascot.jpg",
+  "telephone": "+1-412-701-9191",
+  "priceRange": "$$",
+  "servesCuisine": ["Chicken and Waffles", "Soul Food", "Burgers", "American"],
+  "address": {"@type":"PostalAddress","streetAddress":"2796 Robinson Blvd","addressLocality":"Penn Hills","addressRegion":"PA","postalCode":"15235","addressCountry":"US"},
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"11:00","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"11:30","closes":"20:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"12:00","closes":"20:00"}
+  ],
+  "menu": "https://sdpittsburgh.com/#menu",
+  "sameAs": ["https://www.instagram.com/sooodeliciouskitchen/","https://www.facebook.com/Sooodeliciouskitchen/"]
+}
+</script>
+<style>
+  :root{
+    --blue:#1d3f8f;--blue-deep:#122554;--red:#e23127;--red-dark:#b01f18;
+    --gold:#ffb520;--gold-soft:#ffd97a;--brown:#3a2109;--cream:#fdf6ea;--ink:#20140a;
+    --display:'Arial Black','Archivo Black',system-ui,sans-serif;
+    --body:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;padding-bottom:78px}
+  img,svg{max-width:100%;display:block}
+  a{color:var(--red)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  .announce{background:linear-gradient(90deg,var(--red),var(--red-dark));color:#fff;text-align:center;font-weight:800;font-size:.9rem;padding:9px 14px;letter-spacing:.2px}
+  .announce a{color:#fff;text-decoration:underline;white-space:nowrap}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(18,37,84,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:9px 20px}
+  .nav .logo{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold);object-fit:cover;background:#fff;flex:0 0 42px}
+  .nav .brand{font-family:var(--display);text-transform:uppercase;color:var(--gold);font-size:1.02rem;letter-spacing:.4px;text-decoration:none}
+  .nav .brand span{color:#fff}
+  .nav ul{display:flex;gap:20px;list-style:none;margin-left:auto}
+  .nav ul a{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}
+  .nav ul a:hover{color:var(--gold)}
+  .nav .order{margin-left:16px;background:var(--red);color:#fff;font-family:var(--display);text-transform:uppercase;padding:11px 20px;border-radius:999px;text-decoration:none;font-size:.9rem;letter-spacing:.4px;border:2px solid rgba(255,255,255,.25)}
+  .nav .order:hover{background:var(--red-dark)}
+  @media(max-width:760px){.nav ul{display:none}.nav .order{margin-left:auto}}
+  @media(max-width:430px){.nav .brand{font-size:.86rem}.nav .order{padding:9px 14px;font-size:.8rem}}
+
+  /* cinematic hero */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;background:url('../assets/chicken-waffle-plate.jpg') center 38%/cover no-repeat;transform:scale(1.08);animation:kb 18s ease-out forwards}
+  @keyframes kb{to{transform:scale(1)}}
+  @media(prefers-reduced-motion:reduce){.hero .bg{animation:none;transform:none}}
+  .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,6,2,.15) 0%,rgba(12,20,45,.35) 40%,rgba(10,8,4,.9) 100%)}
+  .hero .inner{position:relative;max-width:1140px;margin:0 auto;width:100%;padding:0 22px 56px;color:#fff}
+  .hero .eyebrow{display:inline-block;font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:.78rem;color:var(--gold-soft);border:1px solid rgba(255,217,122,.5);border-radius:999px;padding:6px 14px;margin-bottom:16px}
+  .hero h1{font-family:var(--display);text-transform:uppercase;line-height:.86;letter-spacing:1px;text-shadow:0 4px 22px rgba(0,0,0,.6)}
+  .hero h1 .l1{display:block;font-size:clamp(3rem,11vw,7rem);color:var(--gold);text-shadow:3px 3px 0 var(--red),0 4px 22px rgba(0,0,0,.5)}
+  .hero h1 .l2{display:block;font-size:clamp(2.2rem,8vw,5rem);color:#fff}
+  .hero .tag{font-family:var(--display);text-transform:uppercase;color:var(--gold-soft);font-size:clamp(.9rem,3vw,1.35rem);letter-spacing:1px;margin-top:14px}
+  .hero p{max-width:540px;margin:14px 0 0;font-size:1.12rem;color:#f2ede3;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+  .hero .actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:26px}
+  .cta{display:inline-flex;flex-direction:column;background:var(--red);color:#fff;text-decoration:none;padding:17px 30px;border-radius:15px;font-family:var(--display);text-transform:uppercase;letter-spacing:.4px;font-size:1.2rem;box-shadow:0 10px 28px rgba(226,49,39,.5)}
+  .cta small{font-family:var(--body);font-weight:600;font-size:.72rem;opacity:.92;letter-spacing:.4px;margin-top:3px}
+  .cta:hover{background:var(--red-dark);transform:translateY(-1px)}
+  .cta.ghost{background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.6);box-shadow:none;backdrop-filter:blur(4px)}
+  .cta.ghost:hover{background:rgba(255,255,255,.22)}
+  .hero .trust{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:18px;font-weight:700;font-size:.95rem}
+  .hero .trust .stars{color:var(--gold)}
+  .hero .trust .dot{color:#5ee87d}.hero .trust .dot.closed{color:#ff9a9a}
+  .scroll-cue{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.7);font-size:1.4rem;animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{50%{transform:translate(-50%,7px)}}
+
+  .section{max-width:1140px;margin:0 auto;padding:72px 22px}
+  .shead{text-align:center;margin-bottom:34px}
+  .shead .k{font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-size:.82rem}
+  .shead h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(1.9rem,6vw,3rem);color:var(--brown);margin-top:6px}
+  .shead p{color:#7a5628;font-weight:600;margin-top:6px}
+
+  /* signature features */
+  .feature{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-bottom:56px}
+  .feature:nth-child(even) .fimg{order:2}
+  @media(max-width:840px){.feature{grid-template-columns:1fr;gap:22px}.feature:nth-child(even) .fimg{order:0}}
+  .fimg{position:relative}
+  .fimg img{width:100%;height:360px;object-fit:cover;border-radius:22px;box-shadow:0 24px 44px rgba(58,33,9,.28)}
+  .fimg .stamp{position:absolute;top:-16px;left:-16px;background:var(--gold);color:var(--brown);font-family:var(--display);text-transform:uppercase;font-size:.8rem;padding:10px 16px;border-radius:12px;transform:rotate(-6deg);box-shadow:0 6px 14px rgba(0,0,0,.2)}
+  .feature h3{font-family:var(--display);text-transform:uppercase;color:var(--red);font-size:clamp(1.5rem,4vw,2.1rem);line-height:1.02;margin-bottom:12px}
+  .feature p{font-size:1.06rem;margin-bottom:8px}
+  .feature .picks{color:#7a5628;font-size:.96rem}
+  .feature .picks strong{color:var(--red)}
+  .feature .add{margin-top:18px;display:inline-flex;align-items:center;gap:8px;background:var(--brown);color:#fff;border:none;cursor:pointer;font-family:var(--display);text-transform:uppercase;letter-spacing:.4px;padding:13px 24px;border-radius:12px;font-size:.92rem}
+  .feature .add:hover{background:#241505}
+  .feature .add.added{background:#1f9d55}
+
+  /* small plates row */
+  .mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+  .mini .card{background:#fff;border-radius:18px;padding:22px;box-shadow:0 8px 22px rgba(58,33,9,.1);display:flex;flex-direction:column}
+  .mini .card h4{font-family:var(--display);text-transform:uppercase;color:var(--brown);font-size:1.05rem;margin-bottom:8px}
+  .mini .card p{font-size:.94rem;color:#5a4020;flex:1}
+  .mini .card .add{margin-top:14px;align-self:flex-start;background:var(--gold);color:var(--brown);border:none;cursor:pointer;font-weight:800;text-transform:uppercase;letter-spacing:.3px;padding:10px 18px;border-radius:10px;font-size:.82rem}
+  .mini .card .add.added{background:#1f9d55;color:#fff}
+
+  .sides{margin-top:30px;background:var(--brown);color:#fff;border-radius:22px;padding:34px;text-align:center}
+  .sides h3{font-family:var(--display);text-transform:uppercase;color:var(--gold);font-size:1.35rem;margin-bottom:14px}
+  .sides .row{display:flex;flex-wrap:wrap;gap:10px 16px;justify-content:center}
+  .sides span{background:rgba(255,255,255,.1);border:1px solid rgba(255,217,122,.4);border-radius:999px;padding:9px 18px;font-weight:600}
+
+  /* waffle burger band */
+  .wb{background:linear-gradient(120deg,var(--blue),var(--blue-deep));color:#fff}
+  .wb .in{max-width:1000px;margin:0 auto;padding:60px 22px;display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+  @media(max-width:800px){.wb .in{grid-template-columns:1fr;text-align:center}}
+  .wb img{border-radius:18px;border:5px solid var(--gold);box-shadow:0 18px 40px rgba(0,0,0,.4);width:100%;height:280px;object-fit:cover}
+  .wb h2{font-family:var(--display);text-transform:uppercase;color:var(--gold);font-size:clamp(1.6rem,5vw,2.5rem);line-height:1.02;margin-bottom:12px}
+  .wb p{font-size:1.1rem;color:#e7edff}
+
+  /* reviews */
+  .reviews{background:#fff;text-align:center}
+  .quote{max-width:680px;margin:0 auto;font-size:1.5rem;font-weight:600;line-height:1.5}
+  .quote .stars{display:block;color:var(--gold);font-size:1.5rem;letter-spacing:4px;margin-bottom:16px}
+  .quote cite{display:block;margin-top:16px;font-size:.95rem;font-style:normal;color:#7a5628;font-weight:700}
+  .rlinks{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .rlinks a{border:2px solid var(--brown);color:var(--brown);text-decoration:none;font-weight:800;border-radius:999px;padding:11px 22px;font-size:.9rem}
+  .rlinks a:hover{background:var(--brown);color:#fff}
+
+  /* gallery masonry-ish */
+  .gallery{columns:3 200px;column-gap:14px}
+  .gallery img{width:100%;border-radius:16px;margin-bottom:14px;box-shadow:0 6px 18px rgba(58,33,9,.18);break-inside:avoid}
+
+  /* visit */
+  .visit{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  @media(max-width:760px){.visit{grid-template-columns:1fr}}
+  .visit .panel{background:#fff;border-radius:20px;padding:30px;box-shadow:0 8px 22px rgba(58,33,9,.1)}
+  .visit h3{font-family:var(--display);text-transform:uppercase;color:var(--brown);font-size:1.2rem;margin-bottom:14px}
+  .visit address{font-style:normal;font-size:1.06rem}
+  .visit .phone{display:inline-block;font-size:1.3rem;font-weight:800;margin-top:8px}
+  .visit .btn{display:inline-block;margin-top:16px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;padding:14px 26px;border-radius:12px}
+  .hours{width:100%;border-collapse:collapse}
+  .hours td{padding:9px 4px;border-bottom:1px dashed #e3d3b8}
+  .hours tr:last-child td{border-bottom:none}.hours td:last-child{text-align:right;font-weight:600}
+  .hours tr.today td{color:var(--red);font-weight:800}
+
+  footer{background:var(--brown);color:#f4e6d2;text-align:center;padding:38px 20px}
+  footer a{color:var(--gold-soft)}
+  footer .fb{font-family:var(--display);text-transform:uppercase;color:var(--gold);font-size:1.25rem;margin-bottom:8px}
+
+  /* ---- order tray (zero-backend text-your-order) ---- */
+  .tray{position:fixed;left:0;right:0;bottom:0;z-index:70;transform:translateY(100%);transition:transform .35s ease}
+  .tray.up{transform:none}
+  .tray .inner{max-width:560px;margin:0 auto;background:#fff;border:2px solid var(--red);border-bottom:none;border-radius:18px 18px 0 0;box-shadow:0 -10px 30px rgba(0,0,0,.2);padding:14px 16px calc(14px + env(safe-area-inset-bottom))}
+  .tray h4{font-family:var(--display);text-transform:uppercase;color:var(--brown);font-size:1rem;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center}
+  .tray h4 button{background:none;border:none;color:#9a8a72;font-size:1.4rem;cursor:pointer;line-height:1}
+  .tray ul{list-style:none;max-height:32vh;overflow:auto;margin-bottom:10px}
+  .tray li{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f0e7d6;font-weight:600;font-size:.95rem}
+  .tray li button{background:#f3ead9;border:none;border-radius:8px;width:28px;height:28px;font-size:1.1rem;cursor:pointer;color:var(--red)}
+  .tray .go{display:flex;gap:10px}
+  .tray .go a{flex:1;text-align:center;text-decoration:none;font-family:var(--display);text-transform:uppercase;letter-spacing:.3px;border-radius:12px;padding:14px;font-size:.98rem}
+  .tray .go .text{background:var(--gold);color:var(--brown)}
+  .tray .go .call{background:var(--red);color:#fff}
+  .tray .empty{color:#9a8a72;font-size:.9rem;padding:6px 0 12px;font-weight:500}
+
+  /* sticky bar */
+  .sticky{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;background:#fff;border-top:3px solid var(--red);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px}
+  .sticky a,.sticky button{text-decoration:none;font-family:var(--display);text-transform:uppercase;letter-spacing:.3px;border:none;cursor:pointer;border-radius:12px;padding:13px 4px;font-size:.92rem;min-height:44px;display:flex;align-items:center;justify-content:center;gap:6px}
+  .sticky .o{flex:2;background:var(--red);color:#fff;position:relative}
+  .sticky .o .badge{position:absolute;top:-6px;right:10px;background:var(--gold);color:var(--brown);border-radius:999px;min-width:20px;height:20px;font-size:.72rem;display:none;align-items:center;justify-content:center;padding:0 5px}
+  .sticky .o .badge.show{display:flex}
+  .sticky .m{flex:1;background:var(--gold);color:var(--brown)}
+  .sticky .d{flex:1;background:var(--blue);color:#fff}
+  @media(min-width:900px){.sticky{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body id="top">
+
+<div class="announce">🧇 Order ahead &amp; skip the wait — pickup ready in about 15 min · <a href="tel:+14127019191">(412) 701-9191</a></div>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <img class="logo" src="../assets/mascot.jpg" alt="Sooo Delicious chicken mascot" width="42" height="42">
+    <a class="brand" href="#top">Sooo… <span>Delicious</span></a>
+    <ul><li><a href="#menu">Menu</a></li><li><a href="#waffleburger">Waffle Burger</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#visit">Visit</a></li></ul>
+    <a class="order" href="tel:+14127019191">Order Now</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" aria-label="Welcome">
+    <div class="bg"></div><div class="scrim"></div>
+    <div class="inner">
+      <p class="eyebrow">Penn Hills · Pittsburgh, PA</p>
+      <h1><span class="l1">Sooo…</span><span class="l2">Delicious</span></h1>
+      <p class="tag">Chicken &amp; Waffles · Burgers &amp; Fries</p>
+      <p>Waffle burgers pressed golden. Crispy chicken over Belgian cornbread waffles.
+         Loaded mac bowls and soul-food sides — hot off the iron on Robinson Blvd.</p>
+      <div class="actions">
+        <a class="cta" href="tel:+14127019191">Order Now — Call<small>(412) 701-9191 · pickup in ~15 min</small></a>
+        <a class="cta ghost" href="#menu">Build an Order<small>Tap dishes · text it to us</small></a>
+      </div>
+      <div class="trust">
+        <span class="stars">★★★★★</span><span>Loved on Google &amp; Yelp</span>
+        <span class="status" id="open-status"><span class="dot">●</span> Open daily</span>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">↓</div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="shead reveal"><p class="k">Pick your favorites</p><h2>The Signature Menu</h2><p>Tap “Add” to build an order, then text or call it in.</p></div>
+
+    <div class="feature reveal">
+      <div class="fimg"><span class="stamp">Fan Favorite</span><img src="../assets/combo-platter.jpg" alt="Chicken and waffle combo platter with mac and cheese, yams, greens and fries"></div>
+      <div>
+        <h3>Chicken &amp; Waffle Combo</h3>
+        <p>Crispy fried chicken over our signature Belgian cornbread waffle, with your pick of sides. Medium or large.</p>
+        <p class="picks"><strong>Waffles:</strong> Belgian Cornbread · Caramel Apple · Carnival Confetti · Lemoncello Cream<br><strong>Protein:</strong> wings · tenders · steak · fried cod</p>
+        <button class="add" data-item="Chicken &amp; Waffle Combo">＋ Add to order</button>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="fimg"><span class="stamp">The Signature</span><img src="../assets/waffle-burger.jpg" alt="Waffle burger cut in half with melted cheese and fries"></div>
+      <div>
+        <h3>Build-Your-Own Waffle Burger</h3>
+        <p>A seasoned burger — bun and all — pressed between two scorching-hot waffle irons until golden and crisp, packed with cheese and toppings.</p>
+        <p class="picks"><strong>Toppings:</strong> lettuce · pickles · onions · peppers · jalapeños · bacon · American cheese</p>
+        <button class="add" data-item="Waffle Burger">＋ Add to order</button>
+      </div>
+    </div>
+
+    <div class="feature reveal">
+      <div class="fimg"><img src="../assets/cheesesteak-basket.jpg" alt="Philly cheesesteak on a fresh roll with seasoned fries"></div>
+      <div>
+        <h3>Philly Cheesesteak</h3>
+        <p>Tender Philly-style steak with peppers, onions &amp; melted cheese on a fresh roll, served with crispy hand-cut fries.</p>
+        <button class="add" data-item="Philly Cheesesteak">＋ Add to order</button>
+      </div>
+    </div>
+
+    <div class="mini reveal">
+      <div class="card"><h4>Mac Cracken Bowls</h4><p>Creamy mac &amp; cheese loaded with buffalo chicken, Philly steak, or fish &amp; chips.</p><button class="add" data-item="Mac Cracken Bowl">＋ Add</button></div>
+      <div class="card"><h4>Chicken Tuxedo</h4><p>Fried chicken stacked in a bun and pressed on the waffle iron, with signature sides.</p><button class="add" data-item="Chicken Tuxedo">＋ Add</button></div>
+      <div class="card"><h4>Specialty Waffles</h4><p>Rotating sweet waffles — confetti, s’mores, blueberry-lemon &amp; more.</p><button class="add" data-item="Specialty Waffle">＋ Add</button></div>
+    </div>
+
+    <div class="sides reveal">
+      <h3>Signature Sides &amp; Drinks</h3>
+      <div class="row"><span>Hand-cut seasoned fries</span><span>Famous mac &amp; cheese</span><span>Smoked collard greens</span><span>Candied yams</span><span>Soft drinks</span><span>Red Bull</span><span>20 oz fruit drinks</span></div>
+    </div>
+  </section>
+
+  <!-- WAFFLE BURGER -->
+  <section class="wb" id="waffleburger">
+    <div class="in">
+      <img class="reveal" src="../assets/waffle-burger.jpg" alt="Waffle burger with hand-cut fries">
+      <div class="reveal">
+        <h2>Wait… what’s a Waffle Burger?</h2>
+        <p>A juicy seasoned burger — bun and all — pressed between two scorching-hot waffle irons,
+           so the whole thing cooks to a golden crisp and locks in the melted cheese and toppings.
+           You’ve had burgers. You haven’t had this.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews">
+    <div class="shead reveal"><p class="k">From the neighborhood</p><h2>Don’t take our word for it</h2></div>
+    <blockquote class="quote reveal"><span class="stars">★★★★★</span>
+      “I got the 3 piece Chicken Platter with Cornbread Waffle and a side of Mac n Cheese and it was absolutely delicious”
+      <cite>— Yelp review</cite></blockquote>
+    <div class="rlinks reveal">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">Google Reviews</a>
+      <a href="https://www.yelp.com/biz/sooo-delicious-penn-hills-township" rel="noopener">Yelp</a>
+      <a href="https://www.instagram.com/sooodeliciouskitchen/" rel="noopener">Instagram</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="shead reveal"><p class="k">Straight from the kitchen</p><h2>Fresh Off the Iron</h2></div>
+    <div class="gallery reveal">
+      <img src="../assets/confetti-waffle.jpg" alt="Confetti waffle with strawberries and cream drizzle">
+      <img src="../assets/smores-waffle.jpg" alt="S'mores waffle with marshmallows and chocolate">
+      <img src="../assets/fries-basket.jpg" alt="Baskets of hand-cut seasoned fries">
+      <img src="../assets/blueberry-waffle.jpg" alt="Blueberry waffle with lemon">
+      <img src="../assets/waffle-sandwich-fries.jpg" alt="Waffle sandwich with lettuce, tomato and fries">
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section" id="visit">
+    <div class="shead reveal"><p class="k">Takeout &amp; catering</p><h2>Come &amp; Get It</h2></div>
+    <div class="visit reveal">
+      <div class="panel">
+        <h3>Find us</h3>
+        <address>Sooo Delicious Chicken &amp; Waffles<br>2796 Robinson Blvd<br>Penn Hills, PA 15235</address>
+        <a class="phone" href="tel:+14127019191">(412) 701-9191</a><br>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">🧭 Get directions</a>
+      </div>
+      <div class="panel">
+        <h3>Hours</h3>
+        <table class="hours"><tbody>
+          <tr data-day="1"><td>Monday</td><td>11:00 AM – 8:00 PM</td></tr>
+          <tr data-day="2"><td>Tuesday</td><td>11:00 AM – 8:00 PM</td></tr>
+          <tr data-day="3"><td>Wednesday</td><td>11:00 AM – 8:00 PM</td></tr>
+          <tr data-day="4"><td>Thursday</td><td>11:00 AM – 8:00 PM</td></tr>
+          <tr data-day="5"><td>Friday</td><td>11:00 AM – 8:00 PM</td></tr>
+          <tr data-day="6"><td>Saturday</td><td>11:30 AM – 8:00 PM</td></tr>
+          <tr data-day="0"><td>Sunday</td><td>12:00 PM – 8:00 PM</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="fb">Sooo… Delicious</p>
+  <p>2796 Robinson Blvd, Penn Hills, PA 15235 · <a href="tel:+14127019191">(412) 701-9191</a></p>
+  <p style="margin-top:8px"><a href="https://www.instagram.com/sooodeliciouskitchen/" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/Sooodeliciouskitchen/" rel="noopener">Facebook</a></p>
+  <p style="margin-top:10px;font-size:.8rem;opacity:.7">Order online coming soon · call or text to order today</p>
+</footer>
+
+<!-- order tray -->
+<div class="tray" id="tray" aria-live="polite">
+  <div class="inner">
+    <h4>Your order <button id="tray-close" aria-label="Close">×</button></h4>
+    <ul id="tray-list"></ul>
+    <p class="empty" id="tray-empty">Tap “Add” on any dish to start.</p>
+    <div class="go">
+      <a class="text" id="tray-text" href="#">Text my order</a>
+      <a class="call" href="tel:+14127019191">Call instead</a>
+    </div>
+  </div>
+</div>
+
+<nav class="sticky" aria-label="Quick actions">
+  <button class="o" id="open-tray">📞 Order <span class="badge" id="sticky-badge">0</span></button>
+  <a class="m" href="#menu">Menu</a>
+  <a class="d" href="https://www.google.com/maps/search/?api=1&amp;query=Sooo+Delicious+2796+Robinson+Blvd+Penn+Hills+PA+15235" rel="noopener">Map</a>
+</nav>
+
+<script>
+  // open-now
+  (function(){var hours={0:[12,20],1:[11,20],2:[11,20],3:[11,20],4:[11,20],5:[11,20],6:[11.5,20]};
+  var now=new Date(),day=now.getDay(),h=now.getHours()+now.getMinutes()/60;
+  var el=document.getElementById('open-status');var row=document.querySelector('.hours tr[data-day="'+day+'"]');if(row)row.classList.add('today');
+  var s=hours[day];function f(t){var hh=Math.floor(t),mm=Math.round((t-hh)*60),ap=hh>=12?'PM':'AM';hh=((hh+11)%12)+1;return hh+(mm?':'+String(mm).padStart(2,'0'):'')+' '+ap;}
+  if(h>=s[0]&&h<s[1])el.innerHTML='<span class="dot">●</span> Open now — closes '+f(s[1]);
+  else{var n=h<s[0]?s[0]:hours[(day+1)%7][0];el.innerHTML='<span class="dot closed">●</span> Closed — opens '+(h<s[0]?'today ':'tomorrow ')+'at '+f(n);}})();
+
+  // scroll reveal
+  (function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(n){io.observe(n);});})();
+
+  // order builder → text/call (zero backend)
+  (function(){
+    var order=[], PHONE='+14127019191';
+    var list=document.getElementById('tray-list'), empty=document.getElementById('tray-empty'),
+        tray=document.getElementById('tray'), badge=document.getElementById('sticky-badge'),
+        textLink=document.getElementById('tray-text');
+    function decode(s){var t=document.createElement('textarea');t.innerHTML=s;return t.value;}
+    function render(){
+      list.innerHTML='';
+      order.forEach(function(name,i){
+        var li=document.createElement('li');
+        li.innerHTML='<span>'+name+'</span>';
+        var b=document.createElement('button');b.textContent='×';b.setAttribute('aria-label','Remove '+name);
+        b.onclick=function(){order.splice(i,1);render();};
+        li.appendChild(b);list.appendChild(li);
+      });
+      empty.style.display=order.length?'none':'block';
+      badge.textContent=order.length;badge.classList.toggle('show',order.length>0);
+      var body='Hi Sooo Delicious! I’d like to order: '+(order.join(', ')||'')+'. Pickup please.';
+      textLink.href='sms:'+PHONE+'?&body='+encodeURIComponent(body);
+    }
+    document.querySelectorAll('.add').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var name=decode(btn.getAttribute('data-item'));
+        order.push(name);
+        btn.classList.add('added');var old=btn.textContent;btn.textContent='✓ Added';
+        setTimeout(function(){btn.classList.remove('added');btn.textContent=old;},1100);
+        tray.classList.add('up');render();
+      });
+    });
+    document.getElementById('open-tray').addEventListener('click',function(){tray.classList.toggle('up');render();});
+    document.getElementById('tray-close').addEventListener('click',function(){tray.classList.remove('up');});
+    render();
+  })();
+</script>
+</body>
+</html>
